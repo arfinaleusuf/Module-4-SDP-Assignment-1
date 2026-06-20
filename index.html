@@ -22,34 +22,51 @@
 
 <body>
     <nav class="m-5">
-        <section class="container d-flex justify-content-between align-items-center">
-            <div class="logo">
-                <img class="w-25 img-fluid" src="icons/logo.png" alt="">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container-fluid">
+                <div class="logo">
+                    <img class="img-fluid" width="60" src="icons/logo.png" alt="">
+                </div>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">About</a>
+                        </li>
+                    </ul>
+                    <a href="resume.pdf" download class="btn btn-primary">Resume <i
+                            class="fa-solid fa-download"></i></a>
+                </div>
             </div>
-            <menu class="text-white">
-                <ul class="list-unstyled d-flex align-items-center gap-2 fw-bold">
-                    <li>Home</li>
-                    <li>Portfolio</li>
-                    <li>Skills</li>
-                    <li>About</li>
-                    <li><a href="resume.pdf" download class="btn btn-primary">Resume <i
-                                class="fa-solid fa-download"></i></a></li>
-                </ul>
-            </menu>
-        </section>
+        </nav>
     </nav>
-    <section class="d-flex justify-content-between align-items-center">
-        <div class="hero text-white">
-            <h1>HI <br> I'M Arfin Al Eusuf</h1>
+    <section class="container d-flex flex-column-reverse flex-md-row justify-content-between align-items-center">
+        <div class="hero text-white col-12 col-md-6">
+            <h1 class="font text-primary">HI <br> I'M Arfin Al Eusuf</h1>
             <p>Web Developer || Software Developer || Programmer</p>
             <p>I am an enthusiastic JavaScript developer with knowing some framework for the
                 frontend and the backend. I know Basic PHP and MySQL but basically a MERN
                 developer.
             </p>
             <div class="icon d-flex gap-4 align-items-center">
-                <a href="https://github.com/arfinaleusuf"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/arfinaleusuf/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.youtube.com/@ArfinAlEusuf"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://github.com/arfinaleusuf" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/arfinaleusuf/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/@ArfinAlEusuf" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                 <a href="resume.pdf" download class="btn btn-primary">
                     Resume <i class="fa-solid fa-download"></i>
                 </a>
@@ -58,16 +75,16 @@
 
         </div>
 
-        <div class="img text-center">
+        <div class="img text-center col-12 col-md-6 mb-4 mb-md-0">
             <img src="images/profile pic light.png" alt="" class="img-fluid w-75">
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section>
+    <section class="container px-3 px-md-0">
         <h1 class="text-center text-white mt-5 mb-5">Portfolio</h1>
         <div class="d-flex flex-column gap-2">
-            <div class="silder d-flex border border-secondary container align-items-center">
+            <div class="silder d-flex flex-column flex-lg-row border border-secondary container align-items-center">
                 <div id="carouselExample" class="carousel slide p-2">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -92,7 +109,13 @@
                     </button>
                 </div>
                 <div class="p-2 text-white">
-                    <h4>Online University </h4>
+                    <div class="d-flex align-items-center gap-3">
+                        <h3>Online Booking</h3>
+                        <a href="https://github.com/arfinaleusuf/Module-01-SDP" target="_blank"><img
+                                src="icons/Vector.png" alt=""></a>
+                        <a href="https://github.com/arfinaleusuf/Module-01-SDP/blob/main/index.html"
+                            target="_blank"><img src="icons/Vector1.png" alt=""></a>
+                    </div>
                     <h6>This is Travel service Agency website.user can
                         login via Facebook sign-in,Google Sign-in and
                         also Can Create an New Account for use the
@@ -106,10 +129,11 @@
                         <li>Firebase Authentication Used in this Website.</li>
                         <li> Uer Can Login via (Google,Facebook,Github)also </li>
                         <li>can Create Account.</li>
+
                     </ul>
                     <div class="d-flex gap-3">
                         <p class="bg-secondary text-white py-1 px-2 rounded">React</p>
-                        <p class="bg-secondary text-white py-1 px-2 rounded">Rirebase</p>
+                        <p class="bg-secondary text-white py-1 px-2 rounded">Firebase</p>
                         <p class="bg-secondary text-white py-1 px-2 rounded">HTML</p>
                         <p class="bg-secondary text-white py-1 px-2 rounded">CSS</p>
                         <p class="bg-secondary text-white py-1 px-2 rounded">Node</p>
@@ -117,7 +141,7 @@
                 </div>
             </div>
 
-            <div class="silder d-flex border border-secondary container align-items-center">
+            <div class="silder d-flex flex-column flex-lg-row border border-secondary container align-items-center">
 
                 <div id="carouselExample2" class="carousel slide p-2">
                     <div class="carousel-inner">
@@ -143,20 +167,26 @@
                     </button>
                 </div>
                 <div class="p-2 text-white">
-                    <h4>Northern University </h4>
-                    <h6>This is Travel service Agency website.user can
+                    <div class="d-flex align-items-center gap-3">
+                        <h3>Northern University </h3>
+                        <a href="https://github.com/arfinaleusuf/Module-3-SDP" target="_blank"><img
+                                src="icons/Vector.png" alt=""></a>
+                        <a href="https://github.com/arfinaleusuf/Module-3-SDP/blob/main/style.css" target="_blank"><img
+                                src="icons/Vector1.png" alt=""></a>
+                    </div>
+
+                    <h6>This is University website. user can
                         login via Facebook sign-in,Google Sign-in and
                         also Can Create an New Account for use the
                         services.user can Choice the service as he/she
                         want.
                     </h6>
                     <ul class="ps-3">
-                        <li> User can Choice the perfect vehicle as he/she
-                            Want</li>
-                        <li>user also can see his/her Current location</li>
+                        <li> User can Choice the perfect course</li>
+                        <li>user also can see his/her Current courses</li>
                         <li>Firebase Authentication Used in this Website.</li>
                         <li> Uer Can Login via (Google,Facebook,Github)also </li>
-                        <li>can Create Account.</li>
+                        <li> Can Create A Student Account.</li>
                     </ul>
                     <div class="d-flex gap-3">
                         <p class="bg-secondary text-white py-1 px-2 rounded">React</p>
@@ -171,10 +201,10 @@
         </div>
     </section>
 
-    <section class="m-5 d-flex align-items-center">
-        <div class="m-5">
+    <section class="container my-5 d-flex flex-column flex-lg-row align-items-center gap-5">
+        <div class="m-5  text-white">
             <h2>Expertise:</h2>
-            <div class="d-flex gap-2">
+            <div class="d-flex flex-wrap gap-2">
                 <p class="bg-secondary text-white py-1 px-2 rounded">React.js</p>
                 <p class="bg-secondary text-white py-1 px-2 rounded">Javascript</p>
                 <p class="bg-secondary text-white py-1 px-2 rounded">Node.js</p>
@@ -185,7 +215,7 @@
                 <p class="bg-secondary text-white py-1 px-2 rounded">MongoDB</p>
             </div>
             <h2>Comfortable:</h2>
-            <div class="d-flex gap-2">
+            <div class="d-flex flex-wrap gap-2">
                 <p class="bg-secondary text-white py-1 px-2 rounded">SQL</p>
                 <p class="bg-secondary text-white py-1 px-2 rounded">Redux</p>
                 <p class="bg-secondary text-white py-1 px-2 rounded">Socket.io</p>
@@ -195,14 +225,14 @@
                 <p class="bg-secondary text-white py-1 px-2 rounded">Next.js</p>
             </div>
             <h2>Familiar:</h2>
-            <div class="d-flex gap-2">
+            <div class="d-flex flex-wrap gap-2">
                 <p class="bg-secondary text-white py-1 px-2 rounded">C++</p>
                 <p class="bg-secondary text-white py-1 px-2 rounded">Python</p>
                 <p class="bg-secondary text-white py-1 px-2 rounded">Spring Boot</p>
                 <p class="bg-secondary text-white py-1 px-2 rounded">Networking</p>
             </div>
             <h2>Tools:</h2>
-            <div class="d-flex gap-2">
+            <div class="d-flex flex-wrap gap-2">
                 <p class="bg-secondary text-white py-1 px-2 rounded">VS Code</p>
                 <p class="bg-secondary text-white py-1 px-2 rounded">JIRA</p>
                 <p class="bg-secondary text-white py-1 px-2 rounded">Trello</p>
@@ -212,7 +242,7 @@
 
         </div>
         <div class="text-center text-white alin">
-            <h1>My Education</h1>
+            <h1 class="font text-primary">My Education</h1>
             <p>B.Sc in CSE</p>
             <p>Northern University Bangladesh (Dhaka Bangladesh)</p>
         </div>
@@ -221,7 +251,7 @@
 
     <section class="py-5">
         <h1 class="text-center text-white mt-5">Contact with Me</h1>
-        <div class="border border-secondary p-4 mx-auto" style="max-width: 500px;">
+        <div class="form border border-secondary p-4 mx-auto" style="max-width: 500px;">
 
             <form class="d-flex flex-column align-items-center gap-3 text-white">
 
@@ -234,7 +264,7 @@
                 <textarea class="form-control bg-secondary text-white border-secondary" rows="4"
                     placeholder="Type Your Message..." required></textarea>
 
-                <input class="btn btn-secondary w-100" style="max-width: 300px;" type="submit" value="SEND">
+                <input class="btn btn-secondary" style="max-width: 300px;" type="submit" value="SEND">
 
             </form>
         </div>
@@ -244,9 +274,10 @@
         <p>Copyright © 2026 | arfin al eusuf</p>
         <p>Dhaka Bangladesh</p>
         <div class="d-flex align-items-center justify-content-center gap-3">
-            <a href="https://github.com/arfinaleusuf"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/arfinaleusuf/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.youtube.com/@ArfinAlEusuf"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://github.com/arfinaleusuf" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/arfinaleusuf/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/@ArfinAlEusuf" target="_blank"><i class="fa-brands fa-youtube"></i></a>
         </div>
 
     </section>

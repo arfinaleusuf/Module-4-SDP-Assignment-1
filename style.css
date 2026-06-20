@@ -6,14 +6,23 @@ body{
     margin-left: 64.5px;
     margin-right: 64.5px;
 }
-h1{
+
+.font{
     font-family: 'Inter', sans-serif;
 }
 .carousel{
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.silder{
+    width: 100%;
 }
 
 .carousel-item img{
     width: 350px;
     height: 250px;
+}
+.form{
+    box-shadow: 4px 4px 8px gray;
 }
