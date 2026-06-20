@@ -9,3 +9,11 @@ body{
 h1{
     font-family: 'Inter', sans-serif;
 }
+.carousel{
+    width: 800px;
+}
+
+.carousel-item img{
+    width: 350px;
+    height: 250px;
+}
